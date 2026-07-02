@@ -1,0 +1,960 @@
+/* ===================================================
+   JS Technology Website
+   Global OEM | ODM | EMS Manufacturing
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    color:#333;
+
+    background:#ffffff;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+        Header
+========================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    background:#0b4f8a;
+
+    color:white;
+
+    z-index:999;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+}
+
+.logo span{
+
+    font-size:13px;
+
+    opacity:.9;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+nav a:hover{
+
+    color:#d6ecff;
+
+}
+
+/* ==========================
+        Hero
+========================== */
+
+.hero{
+
+    padding:140px 0 90px;
+
+    background:#f5f9fd;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.hero h1{
+
+    font-size:46px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+    color:#163d63;
+
+}
+
+.hero h2{
+
+    font-size:22px;
+
+    color:#0b4f8a;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    margin-bottom:18px;
+
+    color:#555;
+
+}
+/* ==========================
+        Buttons
+========================== */
+
+.hero-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 34px;
+
+    border-radius:6px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:#0b4f8a;
+
+    color:#fff;
+
+}
+
+.btn-primary:hover{
+
+    background:#083d6b;
+
+}
+
+.btn-outline{
+
+    border:2px solid #0b4f8a;
+
+    color:#0b4f8a;
+
+}
+
+.btn-outline:hover{
+
+    background:#0b4f8a;
+
+    color:#fff;
+
+}
+
+/* ==========================
+        Statistics
+========================== */
+
+.stats{
+
+    padding:70px 0;
+
+    background:#ffffff;
+
+}
+
+.stats .container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    border:1px solid #e6edf4;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+.stat-card h3{
+
+    color:#0b4f8a;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* ==========================
+        Common Section
+========================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:38px;
+
+    color:#163d63;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ==========================
+        Products
+========================== */
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.product-card{
+
+    background:#fff;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    border:1px solid #e6edf4;
+
+    transition:.25s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.product-card img{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.product-card h3{
+
+    padding:25px 25px 10px;
+
+    color:#163d63;
+
+}
+
+.product-card p{
+
+    padding:0 25px 30px;
+
+    color:#666;
+
+}
+/* ==========================
+        Manufacturing Capability
+========================== */
+
+.capability-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.capability-item{
+
+    background:#f8fbfe;
+
+    border:1px solid #e3edf5;
+
+    border-radius:10px;
+
+    padding:30px;
+
+}
+
+.capability-item h3{
+
+    color:#163d63;
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.capability-item ul{
+
+    list-style:disc;
+
+    padding-left:20px;
+
+}
+
+.capability-item li{
+
+    margin-bottom:10px;
+
+    color:#555;
+
+}
+
+/* ==========================
+        Industries
+========================== */
+
+.industry-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.industry-card{
+
+    background:#0b4f8a;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+        About
+========================== */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.about-text p{
+
+    margin-bottom:18px;
+
+    color:#555;
+
+}
+
+.about-image img{
+
+    border-radius:10px;
+
+}
+
+/* ==========================
+        Advantages
+========================== */
+
+.advantages{
+
+    background:#f7f9fc;
+
+}
+
+.advantage-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.advantage{
+
+    background:#fff;
+
+    border:1px solid #e4ecf3;
+
+    border-radius:10px;
+
+    padding:30px;
+
+}
+
+.advantage h3{
+
+    color:#163d63;
+
+    margin-bottom:15px;
+
+}
+
+.advantage p{
+
+    color:#666;
+
+}
+
+/* ==========================
+        CTA
+========================== */
+
+.cta{
+
+    background:#0b4f8a;
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+.cta h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    opacity:.95;
+
+}
+
+.cta .btn-primary{
+
+    background:#fff;
+
+    color:#0b4f8a;
+
+}
+
+.cta .btn-primary:hover{
+
+    background:#eef5fb;
+
+}
+/* ==========================
+        Contact
+========================== */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+.contact-info{
+
+    background:#f8fbfe;
+
+    padding:40px;
+
+    border-radius:10px;
+
+    border:1px solid #e5edf5;
+
+}
+
+.contact-info h3{
+
+    color:#163d63;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+.contact-info p{
+
+    margin-bottom:20px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+.contact-form{
+
+    background:#ffffff;
+
+    border:1px solid #e5edf5;
+
+    border-radius:10px;
+
+    padding:40px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ccd8e4;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    border-color:#0b4f8a;
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.contact-form button{
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ==========================
+        Footer
+========================== */
+
+footer{
+
+    background:#163d63;
+
+    color:#ffffff;
+
+    padding:70px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:40px;
+
+}
+
+.footer-grid h3,
+
+.footer-grid h4{
+
+    margin-bottom:20px;
+
+}
+
+.footer-grid p,
+
+.footer-grid li{
+
+    color:#d8e4ef;
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+}
+
+.footer-grid ul{
+
+    list-style:none;
+
+}
+
+footer hr{
+
+    margin:45px 0 25px;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#c8d5e3;
+
+    font-size:14px;
+
+}
+
+/* ==========================
+        Responsive
+========================== */
+
+@media(max-width:992px){
+
+.header .container{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.hero-grid,
+
+.about-grid,
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.product-grid,
+
+.capability-grid,
+
+.advantage-grid,
+
+.industry-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats .container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.hero h1{
+
+    font-size:36px;
+
+}
+
+.section-title h2{
+
+    font-size:32px;
+
+}
+
+}
+
+/* ==========================
+        Mobile
+========================== */
+
+@media(max-width:768px){
+
+.hero{
+
+    padding-top:120px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.product-grid,
+
+.capability-grid,
+
+.advantage-grid,
+
+.industry-grid,
+
+.stats .container,
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-info,
+
+.contact-form{
+
+    padding:25px;
+
+}
+
+.logo h2{
+
+    font-size:24px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero h2{
+
+    font-size:18px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.cta h2{
+
+    font-size:30px;
+
+}
+
+body{
+
+    font-size:15px;
+
+}
+
+}
+
+/* ==========================
+        Smooth Hover
+========================== */
+
+.product-card,
+.stat-card,
+.capability-item,
+.advantage,
+.industry-card{
+
+    transition:all .3s ease;
+
+}
+
+.product-card:hover,
+.stat-card:hover,
+.capability-item:hover,
+.advantage:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+/* ==========================
+        End
+========================== */
