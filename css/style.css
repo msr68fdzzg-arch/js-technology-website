@@ -965,3 +965,34 @@ body{
     display: block;
     object-fit: contain;/* 完整包含图片，留白不裁切 */
 }
+/* 全局所有图片完整显示，不变形、不裁切，最高优先级 */
+img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+}
+/* 首页 Hero 右侧图片放大，保持完整 */
+.hero-grid .card-image {
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 8px;
+}
+
+/* 第二页 about 区域图片放大，保持完整 */
+.about-image .card-image {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 8px;
+}
+
+/* 如果图片容器本身限制高度，也一起放开 */
+.hero-grid div,
+.about-image {
+    height: auto !important;
+    overflow: visible !important;
+}
