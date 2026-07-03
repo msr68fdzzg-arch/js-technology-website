@@ -999,7 +999,7 @@ img {
 /* 手机端适配 解决标题被导航遮挡 */
 @media (max-width: 768px) {
   body {
-    padding-top: 100px !important; /* 全局顶部留白，强制所有内容往下挪 */
+    padding-top: 100px !important;
   }
   .hero {
     padding-top: 40px !important;
@@ -1009,8 +1009,8 @@ img {
     margin-top: 0 !important;
   }
   .hero h1 {
-    font-size: 38px !important;
-    line-height: 1.15 !important;
+    font-size: 32px !important; /* 手机更小字号，完整放下 Global */
+    line-height: 1.2 !important;
     margin-top: 0 !important;
   }
   .hero-grid {
