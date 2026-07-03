@@ -998,40 +998,23 @@ img {
 }
 /* 手机端适配 解决标题被导航遮挡 */
 @media (max-width: 768px) {
+  body {
+    padding-top: 100px !important; /* 全局顶部留白，强制所有内容往下挪 */
+  }
   .hero {
-    padding: 80px 20px 60px !important; /* 顶部padding大幅缩小 */
-  }
-  .hero h1 {
-    font-size: 42px !important; /* 手机缩小主标题字号 */
-    line-height: 1.2 !important;
-  }
-  .hero-grid {
-    grid-template-columns: 1fr !important; /* 手机改成单列，图片放下方 */
-    gap: 40px !important;
-  }
-}
-/* 手机端修复标题被导航遮挡 */
-@media (max-width: 768px) {
-  /* 缩小hero顶部内边距，同时增加顶部安全留白 */
-  .hero {
-    padding-top: 110px !important;
+    padding-top: 40px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
     padding-bottom: 60px !important;
+    margin-top: 0 !important;
   }
-  /* 缩小主标题字号，收紧行高 */
   .hero h1 {
     font-size: 38px !important;
     line-height: 1.15 !important;
     margin-top: 0 !important;
   }
-  /* 手机布局单列，图片放下方 */
   .hero-grid {
     grid-template-columns: 1fr !important;
     gap: 35px !important;
-  }
-  /* 给全局页面顶部预留导航高度安全区 */
-  body {
-    margin-top: 0 !important;
   }
 }
