@@ -996,3 +996,17 @@ img {
     height: auto !important;
     overflow: visible !important;
 }
+/* 手机端适配 解决标题被导航遮挡 */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px 60px !important; /* 顶部padding大幅缩小 */
+  }
+  .hero h1 {
+    font-size: 42px !important; /* 手机缩小主标题字号 */
+    line-height: 1.2 !important;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr !important; /* 手机改成单列，图片放下方 */
+    gap: 40px !important;
+  }
+}
